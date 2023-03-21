@@ -147,6 +147,17 @@ curl --location 'localhost:3000/api/v1/salary_calculator/calculate' \
 - Annual Salary
 - Monthly Income Tax
 
+**Output
+```
+# Run the following cURL
+
+curl --location 'localhost:3000/api/v1/salary_calculator' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'employee_name=ren' \
+--data-urlencode 'annual_salary=60000'
+```
+
+
 **4. Create a GET API to list out all information from Requirement 3 on JSON Format:**
 - unit tests where you think its relevant
 ```
