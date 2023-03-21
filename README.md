@@ -173,6 +173,16 @@ curl --location 'localhost:3000/api/v1/salary_calculator' \
 }
 ```
 
+**Output
+```
+# Run the following cURL
+
+curl --location --request GET 'localhost:3000/api/v1/salary_calculator/1' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'employee_name=ren' \
+--data-urlencode 'annual_salary=60000'
+```
+
 **5. [Extra] You can implement any feature related to the APIs you just created**
 Some ideas:
 - Build a Simple UI Form to enter transactions
