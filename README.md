@@ -43,6 +43,12 @@ Do not merge your pull request to the main branch!
 
 **1. You are tasked to create a ruby function `generate_monthly_payslip` to compute a monthly payslip of an individual based on his annual salary with 2 decimal places with unit tests.**
 
+**Output
+```
+# In the rails console run:
+Payslip::Print.call("Ren", 60000)
+```
+
 Example:
 
 When you give an argument of "Ren" and "60000"
@@ -123,6 +129,16 @@ You can use:
   "monthly_income_tax": string,
   "net_monthly_income": string,
 }
+```
+
+**Output
+```
+# Run the following cURL
+
+curl --location 'localhost:3000/api/v1/salary_calculator/calculate' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'employee_name=ren' \
+--data-urlencode 'annual_salary=60000'
 ```
 
 **3. When compute monthly salary POST API is invoked, Then write the following information in a database of your choice, you can use any local or cloud database**

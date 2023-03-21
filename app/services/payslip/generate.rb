@@ -15,7 +15,7 @@ module Payslip
       net_monthly_income = gross_monthly_income - monthly_income_tax
 
       {
-        name: @name,
+        employee_name: @name,
         gross_monthly_income: gross_monthly_income.round(2),
         monthly_income_tax: monthly_income_tax.round(2),
         net_monthly_income: net_monthly_income.round(2)
