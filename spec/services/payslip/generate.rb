@@ -19,7 +19,7 @@ RSpec.describe Payslip::Generate, type: :service do
 
       it 'returns the correct monthly payslip information' do
         expect(subject).to eq({
-          name: 'Ren',
+          employee_name: 'Ren',
           gross_monthly_income: 5000.0,
           monthly_income_tax: 500.0,
           net_monthly_income: 4500.0
@@ -33,7 +33,7 @@ RSpec.describe Payslip::Generate, type: :service do
 
       it 'returns the correct monthly payslip information' do
         expect(subject).to eq({
-          name: 'John Doe',
+          employee_name: 'John Doe',
           gross_monthly_income: 1666.67,
           monthly_income_tax: 0.0,
           net_monthly_income: 1666.67
@@ -47,7 +47,7 @@ RSpec.describe Payslip::Generate, type: :service do
 
       it 'returns the correct monthly payslip information' do
         expect(subject).to eq({
-          name: 'Jane Smith',
+          employee_name: 'Jane Smith',
           gross_monthly_income: 2500.0,
           monthly_income_tax: 83.33,
           net_monthly_income: 2416.67
@@ -61,7 +61,7 @@ RSpec.describe Payslip::Generate, type: :service do
 
       it 'returns the correct monthly payslip information' do
         expect(subject).to eq({
-          name: 'Bob Johnson',
+          employee_name: 'Bob Johnson',
           gross_monthly_income: 5000.0,
           monthly_income_tax: 500.0,
           net_monthly_income: 4500.0
@@ -75,7 +75,7 @@ RSpec.describe Payslip::Generate, type: :service do
 
       it 'returns the correct monthly payslip information' do
         expect(subject).to eq({
-          name: 'Alice Lee',
+          employee_name: 'Alice Lee',
           gross_monthly_income: 10000.0,
           monthly_income_tax: 1833.33,
           net_monthly_income: 8166.67
@@ -89,7 +89,7 @@ RSpec.describe Payslip::Generate, type: :service do
 
       it 'returns the correct monthly payslip information' do
         expect(subject).to eq({
-          name: 'Tom Davis',
+          employee_name: 'Tom Davis',
           gross_monthly_income: 20833.33,
           monthly_income_tax: 5666.67,
           net_monthly_income: 15166.67
